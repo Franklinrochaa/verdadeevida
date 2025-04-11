@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estudo Bíblico">
+    <meta name="keyswords" content="estudo biblico,verdade e vida,estudo da bíblia, série de estudos">
+    <meta name="author" content="Franklin da Silva Rocha">
+    <title>Estudo Bíblico Verdade e Vida</title>
+</head>
+
+<style>
+    
+    h1{
+
+        background-color: #01264b;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: aliceblue;
+        font-size: 16px;
+        line-height: 30px; 
+        
+        
+    }
+
+    h2{ 
+        
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: #01264b;
+        background-color: #47b8fa;
+        margin-top: -10px;
+        font-size: 18px;
+        
+    }
+
+    p{  
+        
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+        color:#cf0844;
+        text-align: justify; 
+        margin-top: -8px;
+        
+       
+    }
+
+    h3{ 
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+        color: #01264b;
+    }
+
+    a{
+       font-size: 13px;
+       font-family: 'Poppins', sans-serif;
+       text-align: justify;
+    }
+
+    b{
+        
+        color: #01264b;
+    }
+
+
+    body {
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size:cover; 
+        background-position: center;        
+        max-width: 900px;  
+        position: absolute;
+        margin-left:50%;
+        transform: translateX(-50%);
+        text-align:justify;
+        justify-content: center;       
+    }
+
+
+            /* Estilo para ocultar as respostas inicialmente */
+            .resposta {
+            display: none;
+            margin-top: 5px;
+        }
+        /* Estilo para a citação quando clicada */
+        .citacao-clicada {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        /* Estilo para a palavra "A Minha Decisão" */
+        .decisao-clicada {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        .concluida {
+        color: green;
+        font-weight: bold;
+        text-align: center;
+        margin: 7px;
+    }
+
+    /* Centralizar os radio buttons e rótulos */
+    .radio-container {
+        margin-top: 10px;
+        text-align: center;
+        /* Centraliza o conteúdo */
+    }
+
+    .radio-label {
+        margin-left: 5px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .radio-button {
+        cursor: pointer;
+    }
+
+    /* Estilo para o botão Reiniciar */
+    .reiniciar-button {
+        display: block;
+        margin: 20px auto;
+        background-color: #01264b;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .reiniciar-button:hover {
+        background-color: #47b8fa;
+        color: #003366;
+        /* Cor azul escuro quando o mouse passar por cima */
+    }
+
+    /* Centralizando o botão */
+    .reiniciar-button-container {
+        text-align: center;
+    }
+
+    img{
+            border-radius: 20px;
+            border: 3px solid;            
+            color:#47b8fa;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+
+        .no-border {
+    border: none;
+    box-shadow:none;
+}
+
+#rodape {
+    color: #01264b;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;    
+}
+
+        
+</style>
+
+<body>
+
+    <h1>Curso Bíblico Verdade & Vida</h1>
+
+<h2>• <i>O Dia do Senhor •</i></h2>
+<p><i><center style="color: #003366; font-family: Caveat, cursive; font-size: 22px;">Conheça o plano de Deus para você.</center></i></p>
+<hr><br><p><b style="color:crimson;">• Lição 08 - O Dia do Senhor.</b></p>
+
+<center>
+<img src="src\images\sabado.jpg" alt=""  width="310px"><br><br></center>
+    <p style="color: mediumblue;"><i> &emsp;&emsp;Deus reservou um tempo especial para Ele. O sábado é o sétimo dia da semana e este é o dia de adorarmos a Deus. Ele não disse que poderíamos guardar qualquer dia, Ele reservou um dia especial e neste dia há uma benção reservada para nós.<br>&emsp;&emsp;A Bíblia mostra o sábado como o dia de Deus. Este é um dia especial. Vejamos o que a Bíblia revela sobre o dia do Senhor.</i></p>
+
+<h3>1.<i> O quê fez o Criador no 7º Dia ao terminar a criação do mundo em seis dias? 
+<span id="citacao1" style="color: rgb(5, 98, 238);cursor:pointer;" onclick="mostrarResposta('citacao1', 'resposta1')"><u>Gênesis 2:3.</u></span></i></h3>
+<p id="resposta1" class="resposta" style="display:none;"><b><i>Resposta Gênesis [2:3]:</i></b> E abençoou Deus o dia sétimo, e o santificou; porque nele descansou de toda a sua obra que Deus criara e fizera.</p>
+
+<h3>2.<i> Que dia é o sétimo da semana? 
+<span id="citacao2" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao2', 'resposta2')"><u>Êxodo 20:10.</u></span></i></h3>
+<p id="resposta2" class="resposta" style="display:none;"><b><i>Resposta Êxodo [20:10]:</i></b> Mas o sétimo dia é o sábado do Senhor teu Deus; não farás nenhuma obra, nem tu, nem teu filho, nem tua filha, nem o teu servo, nem a tua serva, nem o teu animal, nem o teu estrangeiro, que está dentro das tuas portas.</p>
+
+<h3>3.<i> Para quem foi feito o Santo Sábado? 
+<span id="citacao3" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao3', 'resposta3')"><u>Marcos 2:27.</u></span></i></h3>
+<p id="resposta3" class="resposta" style="display:none;"><b><i>Resposta Marcos [2:27]:</i></b> E disse-lhes: O sábado foi feito por causa do homem, e não o homem por causa do sábado.</p>
+
+<h3>4.<i> O que costumava fazer Cristo no dia de Sábado? 
+<span id="citacao4" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao4', 'resposta4')"><u>Lucas 4:16.</u></span></i></h3>
+<p id="resposta4" class="resposta" style="display:none;"><b><i>Resposta Lucas [4:16]:</i></b> E, chegando a Nazaré, onde fora criado, entrou num dia de sábado, segundo o seu costume, na sinagoga, e levantou-se para ler.</p>
+
+<h3>5.<i> Que dia guardavam as santas mulheres, mesmo depois da morte de Cristo? 
+<span id="citacao5" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao5', 'resposta5')"><u>Lucas 23:54-56.</u></span></i></h3>
+<p id="resposta5" class="resposta" style="display:none;"><b><i>Resposta Lucas [23:54]:</i></b> E era o dia da preparação, e amanhecia o sábado. 
+<b><i>[23:55]</i></b> E as mulheres, que tinham vindo com ele da Galileia, seguiram também e viram o sepulcro, e como foi posto o seu corpo. 
+<b><i>[23:56]</i></b> E, voltando elas, prepararam especiarias e unguentos; e no sábado repousaram, conforme o mandamento.</p>
+
+<h3>6.<i> Em que dia especial os apóstolos pregaram o Evangelho anos depois da ressurreição de Cristo? 
+<span id="citacao6" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao6', 'resposta6')"><u>Atos 13:44; Atos 18:4.</u></span></i></h3>
+<p id="resposta6" class="resposta" style="display:none;"><b><i>Resposta Atos [13:44]:</i></b> E no sábado seguinte ajuntou-se quase toda a cidade para ouvir a palavra de Deus. 
+<b><i>[Atos 18:4]</i></b> E todos os sábados disputava na sinagoga, e convencia a judeus e gregos.</p>
+
+<h3>7.<i> É permitido praticar obras de caridade e misericódia aos Sábados? 
+<span id="citacao7" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao7', 'resposta7')"><u>Isaías 58:13-14.</u></span></i></h3>
+<p id="resposta7" class="resposta" style="display:none;"><b><i>Resposta Isaías [58:13]:</i></b> Se desviares o teu pé do sábado, de fazeres a tua vontade no meu santo dia, e chamares ao sábado deleitoso, e o santo dia do Senhor, digno de honra, e o honrares não seguindo os teus caminhos, nem pretendendo fazer a tua própria vontade, nem falares as tuas próprias palavras, 
+<b><i>[58:14]</i></b> Então te deleitarás no Senhor, e te farei cavalgar sobre as alturas da terra, e te sustentarei com a herança de teu pai Jacó; porque a boca do Senhor o disse.</p>
+
+<p><i> Nota: Memorize o quarto Mandamento da <strong>Lei de Deus</strong> , em Êxodo 20:8 a 11.</i></p>
+
+<h3><i><span id="decisao" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('decisao', 'respostaDecisao')"><u>A Minha Decisão</u></span></i></h3>
+<p id="respostaDecisao" class="resposta" style="margin-top: -14px;"><i>Reconheço que o Sábado é o dia do Senhor. Decido servir a Deus e guardar o Seu dia segundo me orienta a Sua Palavra.</i></p>
+
+
+
+   <!-- Container para a checkbox de conclusão -->
+   <div class="radio-container" style="color: mediumblue; font-family: 'Poppins', sans-serif;">
+    <input type="radio" id="concluida" name="lição08" class="radio-button" onclick="marcarConcluida('lição08')" <?php
+        if(localStorage.getItem("lição1Concluida")==="true" ) { echo "checked" ; } ?<BR>
+    <label for="concluida" class="radio-label">Marcar lição 08 como concluída</label>
+</div>
+
+<p id="lição08"></p>
+
+<!-- Botão para reiniciar os estudos -->
+<div class="reiniciar-button-container">
+    <button class="reiniciar-button" onclick="reiniciarEstudos()">Reiniciar o Estudo</button>
+</div>
+
+<center>
+<img class="no-border" src="src\images\LOOP.png" alt="" width="310px"><br><br></center>
+
+
+
+<script>
+    // Função para mostrar a resposta e sublinhar o capítulo e versículo clicado
+    function mostrarResposta(citacaoId, respostaId) {
+        var citacao = document.getElementById(citacaoId);
+        var resposta = document.getElementById(respostaId);
+
+        // Exibe ou oculta a resposta ao clicar
+        if (resposta.style.display === "none") {
+            resposta.style.display = "block";
+            citacao.classList.add("citacao-clicada"); // Adiciona a classe de sublinhado
+        } else {
+            resposta.style.display = "none";
+            citacao.classList.remove("citacao-clicada"); // Remove o sublinhado
+        }
+    }
+    // Função para marcar lição como concluída e salvar no localStorage
+    function marcarConcluida(id) {
+        const lição = document.getElementById(id);
+        lição.textContent = "Lição 08 Finalizada!";
+        lição.classList.add("concluida");
+
+        // Salva a informação no localStorage para manter após recarregar a página
+        localStorage.setItem("lição08Concluida", "true");
+    }
+
+    // Função para reiniciar os estudos e remover o localStorage
+    function reiniciarEstudos() {
+        // Reseta o estado do localStorage
+        localStorage.removeItem("lição08Concluida");
+
+        // Reseta o texto e a aparência da lição
+        document.getElementById("lição08").textContent = "";
+        document.getElementById("lição08").classList.remove("concluida");
+
+        // Desmarca o radio button
+        document.getElementById("concluida").checked = false;
+    }
+
+    // Verifica se a lição foi concluída e mantém o estado do radio button
+    window.onload = function() {
+        if (localStorage.getItem("lição08Concluida") === "true") {
+            document.getElementById("concluida").checked = true;
+            document.getElementById("lição08").textContent = " Parabéns! Lição 08 Finalizada!";
+            document.getElementById("lição08").classList.add("concluida");
+        }
+    }
+</script>
+   
+            <a href="index.html"><center>Voltar para a tela inicial</center></a>
+    <a href="https://aamar.adventistas.org/" target="_blank"><center> Associação Amazonas Roraima - AAmaR</center></a><br><br> 
+
+    <footer id="rodape">
+        Igreja Adventista do Sétimo Dia<br> Copyright  &copy;  2025 - Todos os Direitos Reservados.
+</footer><br>
+
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estudo Bíblico">
+    <meta name="keyswords" content="estudo biblico,verdade e vida,estudo da bíblia, série de estudos">
+    <meta name="author" content="Franklin da Silva Rocha">
+    <title>Estudo Bíblico Verdade e Vida</title>
+</head>
+
+<style>
+    
+    h1{
+
+        background-color: #01264b;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: aliceblue;
+        font-size: 16px;
+        line-height: 30px; 
+        
+        
+    }
+
+    h2{ 
+        
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: #01264b;
+        background-color: #47b8fa;
+        margin-top: -10px;
+        font-size: 18px;
+        
+    }
+
+    p{  
+        
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+        color:#cf0844;
+        text-align: justify; 
+        margin-top: -8px;
+        
+       
+    }
+
+    h3{ 
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+        color: #01264b;
+    }
+
+
+    a{
+       font-size: 13px;
+       font-family: 'Poppins', sans-serif;
+       text-align: justify;
+    }
+
+    b{
+        
+        color: #01264b;
+    }
+
+
+    body {
+        background-image:url("");
+        background-size:cover; 
+        background-repeat: no-repeat;        
+        background-position: center;        
+        max-width: 900px;  
+        position: absolute;
+        margin-left:50%;
+        transform: translateX(-50%);
+        text-align:justify;
+        justify-content: center;    
+       
+    }
+
+    
+
+    
+
+    /* Estilo para as respostas inicialmente ocultas */
+    .resposta {
+            display: none;
+            margin-top: 5px;
+        }
+        /* Estilo para os links de mostrar resposta */
+        .mostrar-resposta {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+        /* Estilo para sublinhar quando o versículo for clicado */
+        .citacao-clicada {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .concluida {
+        color: green;
+        font-weight: bold;
+        text-align: center;
+        margin: 7px;
+    }
+
+    /* Centralizar os radio buttons e rótulos */
+    .radio-container {
+        margin-top: 10px;
+        text-align: center;
+        /* Centraliza o conteúdo */
+    }
+
+    .radio-label {
+        margin-left: 5px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .radio-button {
+        cursor: pointer;
+    }
+
+    /* Estilo para o botão Reiniciar */
+    .reiniciar-button {
+        display: block;
+        margin: 20px auto;
+        background-color: #01264b;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .reiniciar-button:hover {
+        background-color: #47b8fa;
+        color: #003366;
+        /* Cor azul escuro quando o mouse passar por cima */
+    }
+
+    /* Centralizando o botão */
+    .reiniciar-button-container {
+        text-align: center;
+    }
+
+    img{
+            border-radius: 20px;
+            border: 3px solid;            
+            color:#47b8fa;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+
+
+        .no-border {
+    border: none;
+    box-shadow:none;
+}
+
+#rodape {
+    color: #01264b;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;    
+}
+
+    
+</style>
+
+<body>
+   
+    <h1>Curso Bíblico Verdade & Vida</h1>
+
+    <h2>• <i>A Lei de Deus •</i></h2>
+    <p><i><center style="color: #003366; font-family: Caveat, cursive; font-size: 22px;">Conheça o plano de Deus para você.</center></i></p>
+    <hr><br><p><b style="color:crimson;">• Lição 07 - A Lei de Deus.</b></p>
+
+    <center>
+    <img src="src\images\ALeideDeus.jpg" alt=""  width="310px"><br><br></center>
+    <p style="color: mediumblue;"><i> &emsp;&emsp;É impressionante observar a natureza e perceber que existem leis naturais em toda a sua extensão. Estas leis regem o movimento da terra, o aparecimento do sol durante o dia, a lua durante a noite. Todo o universo foi criado com leis; estas leis mantêm o equilíbrio e a harmonia do mesmo.<br> &emsp;&emsp;Assim é na sociedade, para que todos estejam em paz e segurança, é preciso estabelecer leis. O governo de Deus também está baseado em leis, a leide Deus é o princípio que pode assegurar felicidade a nossa vida. Vamos conhecer mais sobre a lei de Deus.</i></p>
+    
+    <h3>1.<i> Segundo a Bíblia, quem escreveu os dez mandamentos entregues ao patriarca Moisés? 
+    <span id="citacao1" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao1', 'resposta1')"><u>Êxodo 31:18</u></span></i></h3>
+    <p id="resposta1" class="resposta" style="display:none;"><b><i> Resposta Êxodo [31:18]:</i></b> E deu a Moisés (quando acabou de falar com ele no monte Sinai) as duas tábuas do testemunho, tábuas de pedra, escritas pelo dedo de Deus.</p>
+    
+    <h3>2.<i> O que é pecado? 
+    <span id="citacao2" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao2', 'resposta2')"><u>I João 3:4</u></span></i></h3>
+    <p id="resposta2" class="resposta" style="display:none;"><b><i>Resposta I João [3:4]:</i></b> Qualquer que pratica o pecado, também transgride a lei; porque o pecado é a transgressão da lei.</p>
+    
+    <h3>3.<i> Como o apóstolo Paulo considerava a Lei de Deus? 
+    <span id="citacao3" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao3', 'resposta3')"><u>Romanos 7:12</u></span></i></h3>
+    <p id="resposta3" class="resposta" style="display:none;"><b><i>Resposta Romanos [7:12]:</i></b> E assim a lei é santa, e o mandamento santo, justo e bom.</p>
+    
+    <h3>4.<i> Jesus Cristo mudou ou anulou a Lei de Deus? 
+    <span id="citacao4" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao4', 'resposta4')"><u>Mateus 5:17-18</u></span></i></h3>
+    <p id="resposta4" class="resposta" style="display:none;"><b><i>Resposta Mateus [5:17]:</i></b> "Não pensem que vim abolir a Lei ou os Profetas; não vim abolir, mas cumprir. 
+        <b><i>[5:18]</i></b> Digo-lhes a verdade: Enquanto existirem céus e terra, de forma alguma desaparecerá da Lei a menor letra ou o menor traço, até que tudo se cumpra.</p>
+    
+    <h3>5.<i> Quantos mandamentos é preciso violar para tornar-se transgressor da Lei? 
+    <span id="citacao5" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao5', 'resposta5')"><u>Tiago 2:10</u></span></i></h3>
+    <p id="resposta5" class="resposta" style="display:none;"><b><i>Resposta Tiago [2:10]:</i></b> Pois quem obedece a toda a Lei, mas tropeça em apenas um ponto, torna-se culpado de quebrá-la inteiramente.</p>
+    
+    <h3>6.<i> Qual foi o propósito especial de a Lei ter sido dada? 
+    <span id="citacao6" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao6', 'resposta6')"><u>Gálatas 3:24</u></span></i></h3>
+    <p id="resposta6" class="resposta" style="display:none;"><b><i>Resposta Gálatas [3:24]:</i></b> Assim, a lei foi o nosso tutor até Cristo, para que fôssemos justificados pela fé.</p>
+    
+    <h3>7.<i> Como permaneceremos no amor de Cristo? 
+    <span id="citacao7" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao7', 'resposta7')"><u>João 15:10</u></span></i></h3>
+    <p id="resposta7" class="resposta" style="display:none;"><b><i>Resposta João [15:10]:</i></b> Se vocês obedecerem aos meus mandamentos, permanecerão no meu amor, assim como tenho obedecido aos mandamentos de meu Pai e em seu amor permaneço.</p>
+    
+    <h3><i><span id="citacao8" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao8', 'resposta8')"><u>A Minha Decisão</u></span></i></h3>
+    <p id="resposta8" class="resposta" style="margin-top: -14px;"><i>Aceito a Cristo como o meu Salvador e desejo viver em conformidade com a Lei de Deus. Escolho seguir Seus mandamentos para agradá-Lo e estar preparado para o Seu retorno.</i></p>
+
+    
+    <!-- Container para a checkbox de conclusão -->
+ <div class="radio-container" style="color: mediumblue; font-family: 'Poppins', sans-serif;">
+    <input type="radio" id="concluida" name="lição07" class="radio-button" onclick="marcarConcluida('lição07')" <?php
+        if(localStorage.getItem("lição1Concluida")==="true" ) { echo "checked" ; } ?<BR>
+    <label for="concluida" class="radio-label">Marcar lição 07 como concluída</label>
+</div>
+
+<p id="lição07"></p>
+
+<!-- Botão para reiniciar os estudos -->
+<div class="reiniciar-button-container">
+    <button class="reiniciar-button" onclick="reiniciarEstudos()">Reiniciar o Estudo</button>
+</div>
+<center>
+<img class="no-border" src="src\images\LOOP.png" alt="" width="310px"><br><br></center>
+
+
+
+<script>
+    // Função para mostrar a resposta e sublinhar o capítulo e versículo clicado
+    function mostrarResposta(citacaoId, respostaId) {
+        var citacao = document.getElementById(citacaoId);
+        var resposta = document.getElementById(respostaId);
+
+        // Exibe ou oculta a resposta ao clicar
+        if (resposta.style.display === "none") {
+            resposta.style.display = "block";
+            citacao.classList.add("citacao-clicada"); // Adiciona a classe de sublinhado
+        } else {
+            resposta.style.display = "none";
+            citacao.classList.remove("citacao-clicada"); // Remove o sublinhado
+        }
+    }
+    // Função para marcar lição como concluída e salvar no localStorage
+    function marcarConcluida(id) {
+        const lição = document.getElementById(id);
+        lição.textContent = "Lição 07 Finalizada!";
+        lição.classList.add("concluida");
+
+        // Salva a informação no localStorage para manter após recarregar a página
+        localStorage.setItem("lição07Concluida", "true");
+    }
+
+    // Função para reiniciar os estudos e remover o localStorage
+    function reiniciarEstudos() {
+        // Reseta o estado do localStorage
+        localStorage.removeItem("lição07Concluida");
+
+        // Reseta o texto e a aparência da lição
+        document.getElementById("lição07").textContent = "";
+        document.getElementById("lição07").classList.remove("concluida");
+
+        // Desmarca o radio button
+        document.getElementById("concluida").checked = false;
+    }
+
+    // Verifica se a lição foi concluída e mantém o estado do radio button
+    window.onload = function() {
+        if (localStorage.getItem("lição07Concluida") === "true") {
+            document.getElementById("concluida").checked = true;
+            document.getElementById("lição07").textContent = " Parabéns! Lição 07 Finalizada!";
+            document.getElementById("lição07").classList.add("concluida");
+        }
+    }
+</script>
+
+            <a href="index.html"><center>Voltar para a tela inicial</center></a>
+    <a href="https://aamar.adventistas.org/" target="_blank"><center> Associação Amazonas Roraima - AAmaR</center></a><br><br> 
+
+    <footer id="rodape">
+        Igreja Adventista do Sétimo Dia<br> Copyright  &copy;  2025 - Todos os Direitos Reservados.
+</footer><br>
+
+</body>
+
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estudo Bíblico">
+    <meta name="keyswords" content="estudo biblico,verdade e vida,estudo da bíblia, série de estudos">
+    <meta name="author" content="Franklin da Silva Rocha">
+    <title>Estudo Bíblico Verdade e Vida</title>
+</head>
+
+<style>
+    h1 {
+        background-color: #01264b;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: aliceblue;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: #01264b;
+        background-color: #47b8fa;
+        margin-top: -10px;
+        font-size: 18px;
+    }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+        color: #cf0844;
+        text-align: justify;
+        margin-top: -8px;
+    }
+
+    h3 {
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+        color: #01264b;
+    }
+
+    a {
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+        text-align: justify;
+    }
+
+    b {
+        color: #01264b;
+    }
+
+    body {
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size:cover; 
+        background-position: center;        
+        max-width: 900px;  
+        position: absolute;
+        margin-left:50%;
+        transform: translateX(-50%);
+        text-align:justify;
+        justify-content: center;       
+    }
+
+
+    /* Estilos para os versículos clicáveis */
+    .versiculo {
+        color: rgb(5, 98, 238);
+        text-decoration: underline;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Estilos para as respostas */
+    .resposta {
+        display: none;
+        margin-top: 10px;
+        font-style: italic;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Estilos adicionais para o título e outras seções */
+    h1, h2, h3 {
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+    .concluida {
+            color: green;
+            font-weight: bold;
+            text-align: center;
+            margin: 7px;
+        }
+
+        .radio-container {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .radio-label {
+            margin-left: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .radio-button {
+            cursor: pointer;
+        }
+
+        .reiniciar-button {
+            display: block;
+            margin: 20px auto;
+            background-color: #01264b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .reiniciar-button:hover {
+            background-color: #47b8fa;
+            color: #003366;
+        }
+
+        .reiniciar-button-container {
+            text-align: center;
+        }
+
+        img{
+            border-radius: 20px;
+            border: 3px solid;            
+            color:#47b8fa;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+
+        .no-border {
+    border: none;
+    box-shadow:none;
+}
+
+#rodape {
+    color: #01264b;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;    
+}
+
+
+</style>
+
+<body>
+    <h1>Curso Bíblico Verdade & Vida</h1>
+    <h2>• <i>O Dom de Profecia •</i></h2>
+    <p><i><center style="color: #003366; font-family: Caveat, cursive; font-size: 22px;">Conheça o plano de Deus para você.</center></i></p>
+    <hr><br><p><b style="color:crimson;">• Lição 14 - O Dom de Profecia.</b></p>
+
+    <center>
+    <img src="src\images\Alto-Clamor.jpg" alt=""  width="310px"><br><br></center>
+<p style="color: mediumblue;"><i> &emsp;&emsp;Em Amós 3:7 está escrito: "Certamente, o Senhor Deus não fará coisa alguma, sem primeiro revelar o seu segredo aos seus servos, os profetas."<br>&emsp;&emsp;Assim concluímos que Deus nos fala através do ministério dos profetas. Deus enviou uma mensageira para falar ao seu povo nos dias atuais.<br>&emsp;&emsp;A Bíblia nos revela as verdades sobre  o dom profético.</i></p>
+
+    <h3>1.<i> Como Deus se comunicava, depois do pecado, com Sua igreja? 
+    <span class="versiculo" onclick="mostrarResposta('citacao1', 'resposta1')">Números 12:6.</span></i></h3>
+    <p id="resposta1" class="resposta"><b>Resposta Números [12:6]:</b> E disse: Ouvi agora as minhas palavras; se entre vós houver profeta, eu, o Senhor, em visão a ele me farei conhecer, ou em sonhos falarei com ele.</p>
+
+    <h3>2.<i> Que dons pôs Deus na Igreja, e para que fim? 
+    <span class="versiculo" onclick="mostrarResposta('citacao2', 'resposta2')">Efésios 4:11-13.</span></i></h3>
+    <p id="resposta2" class="resposta"><b>Resposta Efésios [4:11]:</b> E ele mesmo deu uns para apóstolos, e outros para profetas, e outros para evangelistas, e outros para pastores e doutores, <b><i>[4:12]</i></b> Querendo o aperfeiçoamento dos santos, para a obra do ministério, para edificação do corpo de Cristo; <b><i>[4:13]</i></b> Até que todos cheguemos à unidade da fé, e ao conhecimento do Filho de Deus, a homem perfeito, à medida da estatura completa de Cristo.</p>
+
+    <h3>3.<i> O que fazem os falsos profetas para enganar o povo? 
+    <span class="versiculo" onclick="mostrarResposta('citacao3', 'resposta3')">Mateus 24:24.</span></i></h3>
+    <p id="resposta3" class="resposta"><b>Resposta Mateus [24:24]</b> Porque surgirão falsos cristos e falsos profetas, e farão tão grandes sinais e prodígios que, se possível fora, enganariam até os escolhidos.</p>
+
+    <h3>4. <i>Características do profeta verdadeiro:  
+        <span id="citacao4" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao4', 'resposta4')"><u>Mateus 7:16;</u></span> 
+        <span id="citacao5" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao5', 'resposta5')"><u>Deuteronômio 18:22;</u></span>
+        <span id="citacao6" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao6', 'resposta6')"><u>Isaías 8:20;</u></span>
+        <span id="citacao7" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao7', 'resposta7')"><u>I João 4:2</u></span>
+    </i></h3>
+
+    <p id="resposta4" class="resposta" style="display:none;"><b>Resposta Mateus [7:16]:</b> Vocês os reconhecerão por seus frutos. Pode alguém colher uvas de um espinheiro ou figos de ervas daninhas?.</p>
+    <p id="resposta5" class="resposta" style="display:none;"><b>Resposta Deuteronômio [18:22]</b></b> Se o que o profeta proclamar em nome do Senhor não acontecer nem se cumprir, essa mensagem não vem do Senhor. Aquele profeta falou com presunção. Não tenham medo dele.</p>    
+    <p id="resposta6" class="resposta" style="display:none;"><b>Resposta Isaías [8:20]</b> Respondam: "À lei e aos mandamentos!" Se eles não falarem conforme esta palavra, vocês jamais verão a luz!.</p>
+    <p id="resposta7" class="resposta" style="display:none;"><b>Resposta I João [4:2]</b> Vocês podem reconhecer o Espírito de Deus deste modo: todo espírito que confessa que Jesus Cristo veio em carne procede de Deus.</p>
+
+    <h3>5.<i> Por que dois motivos faz o dragão guerra à mulher, isto é, à Igreja de Deus? 
+    <span class="versiculo" onclick="mostrarResposta('citacao8', 'resposta8')">Apocalipse 12:17.</span></i></h3>
+    <p id="resposta8" class="resposta"><b>Resposta Apocalipse [12:17]:</b> O dragão irou-se contra a mulher e saiu para guerrear contra o restante da sua descendência, os que obedecem aos mandamentos de Deus e se mantêm fiéis ao testemunho de Jesus.</p>
+
+    <h3>6.<i> O Que é o testemunho de Jesus? 
+    <span class="versiculo" onclick="mostrarResposta('citacao9', 'resposta9')">Apocalipse 19:10.</span></i></h3>
+    <p id="resposta9" class="resposta"><b>Resposta Apocalipse [19:10]:</b> Então caí aos seus pés para adorá-lo, mas ele me disse: "Não faça isso! Sou servo como você e como os seus irmãos que se mantêm fiéis ao testemunho de Jesus. Adore a Deus! O testemunho de Jesus é o espírito de profecia".</p>
+
+    <h3>7.<i> Que conselho é dado à Igreja com relação às instruções dos profetas? 
+    <span class="versiculo" onclick="mostrarResposta('citacao10', 'resposta10')">II Crônicas 20:20.</span></i></h3>
+    <p id="resposta10" class="resposta"><b>Resposta II Crônicas [20:20]:</b> De madrugada partiram para o deserto de Tecoa. Quando estavam saindo, Josafá lhes disse: "Escutem-me, Judá e povo de Jerusalém! Tenham fé no Senhor, o seu Deus, e vocês serão sustentados; tenham fé nos profetas do Senhor, e terão a vitória".</p>
+
+    <h3><i><span id="decisao" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('decisao', 'respostaDecisao')"><u>A Minha Decisão</u></span></i></h3>
+    <p id="respostaDecisao" class="resposta" style="margin-top: -14px;"><i>Aceito o dom de profecia como característica da igreja de Deus no tempo do fim. Creio que Deus usou Ellen G. White como sua mensageira para orientar Sua igreja</i></p>
+
+
+    <div class="radio-container" style="color: mediumblue; font-family: 'Poppins', sans-serif;">
+        <input type="radio" id="concluida" name="lição14" class="radio-button" onclick="marcarConcluida('lição14')">
+        <label for="concluida" class="radio-label">Marcar lição 14 como concluída</label>
+    </div>
+
+    <p id="lição14"></p>
+
+    <div class="reiniciar-button-container">
+        <button class="reiniciar-button" onclick="reiniciarEstudos()">Reiniciar o Estudo</button>
+    </div>
+
+    <center>
+    <img class="no-border" src="src\images\LOOP.png" alt="" width="310px"><br><br></center>
+
+
+    <script>
+
+          // Função para mostrar ou esconder a resposta
+          function mostrarResposta(id) {
+            const resposta = document.getElementById(id);
+            resposta.style.display = resposta.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Função para marcar lição como concluída e salvar no localStorage
+        function marcarConcluida(id) {
+            const lição = document.getElementById(id);
+            lição.textContent = "Lição 14 Finalizada!";
+            lição.classList.add("concluida");
+
+            localStorage.setItem("lição14Concluida", "true");
+        }
+
+        // Função para reiniciar os estudos
+        function reiniciarEstudos() {
+            localStorage.removeItem("lição14Concluida");
+            document.getElementById("lição14").textContent = "";
+            document.getElementById("lição14").classList.remove("concluida");
+            document.getElementById("concluida").checked = false;
+        }
+
+        // Verificar o estado da lição ao carregar
+        window.onload = function() {
+            if (localStorage.getItem("lição14Concluida") === "true") {
+                document.getElementById("concluida").checked = true;
+                document.getElementById("lição14").textContent = "Parabéns! Lição 14 Finalizada!";
+                document.getElementById("lição14").classList.add("concluida");
+            }
+        }
+
+
+
+        function mostrarResposta(versiculoId, respostaId) {
+            var resposta = document.getElementById(respostaId);
+            if (resposta.style.display === "none" || resposta.style.display === "") {
+                resposta.style.display = "block";
+            } else {
+                resposta.style.display = "none";
+            }
+        }
+    </script>
+
+    <a href="index.html"><center>Voltar para a tela inicial</center></a>
+    <a href="https://aamar.adventistas.org/" target="_blank"><center> Associação Amazonas Roraima - AAmaR</center></a><br><br> 
+
+    <footer id="rodape">
+        Igreja Adventista do Sétimo Dia<br> Copyright  &copy;  2025 - Todos os Direitos Reservados.
+</footer><br>
+
+</body>
+
+</html>

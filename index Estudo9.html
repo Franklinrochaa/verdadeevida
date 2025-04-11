@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estudo Bíblico">
+    <meta name="keyswords" content="estudo biblico,verdade e vida,estudo da bíblia, série de estudos">
+    <meta name="author" content="Franklin da Silva Rocha">
+    <title>Estudo Bíblico Verdade e Vida</title>
+</head>
+
+<style>
+    h1 {
+
+        background-color: #01264b;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: aliceblue;
+        font-size: 16px;
+        line-height: 30px;
+
+
+    }
+
+    h2 {
+
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: #01264b;
+        background-color: #47b8fa;
+        margin-top: -10px;
+        font-size: 18px;
+
+    }
+
+    p {
+
+        font-family: Poppins;
+        font-size: 13px;
+        color: #cf0844;
+        text-align: justify;
+        margin-top: -8px;
+
+
+    }
+
+    h3 {
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+        color: #01264b;
+    }
+
+    a {
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+        text-align: justify;
+    }
+
+    b {
+
+        color: #01264b;
+    }
+
+    /* Estilo para ocultar as respostas inicialmente */
+    .resposta {
+        display: none;
+        margin-top: 5px;
+    }
+
+    /* Estilo para a citação quando clicada */
+    .citacao-clicada {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    /* Estilo para a palavra "A Minha Decisão" */
+    .decisao-clicada {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    body {
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size:cover; 
+        background-position: center;        
+        max-width: 900px;  
+        position: absolute;
+        margin-left:50%;
+        transform: translateX(-50%);
+        text-align:justify;
+        justify-content: center;       
+    }
+
+
+    .concluida {
+        color: green;
+        font-weight: bold;
+        text-align: center;
+        margin: 7px;
+    }
+
+    /* Centralizar os radio buttons e rótulos */
+    .radio-container {
+        margin-top: 10px;
+        text-align: center;
+        /* Centraliza o conteúdo */
+    }
+
+    .radio-label {
+        margin-left: 5px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .radio-button {
+        cursor: pointer;
+    }
+
+    /* Estilo para o botão Reiniciar */
+    .reiniciar-button {
+        display: block;
+        margin: 20px auto;
+        background-color: #01264b;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .reiniciar-button:hover {
+        background-color: #47b8fa;
+        color: #003366;
+        /* Cor azul escuro quando o mouse passar por cima */
+    }
+
+    /* Centralizando o botão */
+    .reiniciar-button-container {
+        text-align: center;
+    }
+
+    img{
+            border-radius: 20px;
+            border: 3px solid;            
+            color:#47b8fa;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+
+        .no-border {
+    border: none;
+    box-shadow:none;
+}
+
+#rodape {
+    color: #01264b;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;    
+}
+
+
+
+</style>
+
+<body>
+
+    <h1>Curso Bíblico Verdade & Vida</h1>
+
+    <h2>• <i>As Horas do Sábado •</i></h2>
+    <p><i><center style="color: #003366; font-family: Caveat, cursive; font-size: 22px;">Conheça o plano de Deus para você.</center></i></p>
+    <hr><br>
+    <p><b style="color:crimson;">• Lição 09 - As Horas do Sábado.</b></p>
+
+    <center>
+    <img src="src\images\familia.jpg" alt=""  width="310px"><br><br></center>
+    <p style="color: mediumblue;"><i> &emsp;&emsp;Muitos de nós temos dúvidas sobre a como guardar o sábado. Cremos que este é o dia de Deus, mas não sabemos exatamente como fazer.<br>&emsp;&emsp;Seria bom se a Bíblia ensinasse como guardar o sábado...Você sabia que a Bíblia nos mostra isto? Deixemos que a Bíblia nos apresente o que é preciso fazer para observar o sábado.</i></p>
+
+    <h3>1.<i> Como se chama, nas Escrituras, o dia anterior ao Sábado?
+            <span id="citacao1" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao1', 'resposta1')"><u>Lucas 23:54.</u></span></i></h3>
+    <p id="resposta1" class="resposta"><b><i>Resposta Lucas [23:54]:</i></b> E era o dia da preparação, e amanhecia o sábado.
+    </p>
+
+    <h3>2.<i> Como o povo de Deus no passado, ao colher o maná, preparava-se na sexta-feira para guardar o Sábado?
+            <span id="citacao2" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao2', 'resposta2')"><u>Êxodo 16:22-26.</u></span></i></h3>
+    <p id="resposta2" class="resposta"><b><i>Resposta Êxodo [16:22]:</i></b> E aconteceu que ao sexto dia colheram pão em
+        dobro, dois ômeres para cada um; e todos os príncipes da congregação vieram, e contaram-no a Moisés.
+        <b><i>[16:23]</i></b> E ele disse-lhes: Isto é o que o Senhor tem dito: Amanhã é repouso, o santo sábado do Senhor; o que
+        quiserdes cozer no forno, cozei-o, e o que quiserdes cozer em água, cozei-o em água; e tudo o que sobejar,
+        guardai para vós até amanhã.
+        <b><i>[16:24]</i></b> E guardaram-no até o dia seguinte, como Moisés tinha ordenado; e não cheirou mal nem nele houve
+        algum bicho.
+        <b><i>[16:25]</i></b> Então disse Moisés: Comei-o hoje, porquanto hoje é o sábado do Senhor; hoje não o achareis no
+        campo.
+        <b><i>[16:26]</i></b> Seis dias o colhereis, mas o sétimo dia é o sábado; nele não haverá.
+    </p>
+
+    <h3>3.<i> Quem não deve trabalhar no santo dia de Sábado?
+            <span id="citacao3" style="color:blue; cursor:pointer;" onclick="mostrarResposta('citacao3', 'resposta3')"><u>Êxodo 20:8-11.</u></span></i></h3>
+    <p id="resposta3" class="resposta"><b><i> Êxodo [20:8]:</i></b> Lembra-te do dia do sábado, para o santificar.
+        <b><i>[20:9]</i></b> Seis dias trabalharás, e farás toda a tua obra.
+        <b><i>[20:10]</i></b> Mas o sétimo dia é o sábado do Senhor teu Deus; não farás nenhuma obra, nem tu, nem teu filho, nem
+        tua filha, nem o teu servo, nem a tua serva, nem o teu animal, nem o teu estrangeiro, que está dentro das tuas
+        portas.
+        <b><i>[20:11]</i></b> Porque em seis dias fez o Senhor os céus e a terra, o mar e tudo que neles há, e ao sétimo dia
+        descansou; portanto abençoou o Senhor o dia do sábado, e o santificou.
+    </p>
+
+    <h3>4.<i> Quando começa e termina o Sábado?
+        <span id="citacao4" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao4', 'resposta4')"><u>Levítico 23:32.</u></span></i></h3>
+    <p id="resposta4" class="resposta"><b><i>Resposta Levítico [23:32]:</i></b> Sábado de descanso vos será; então afligireis
+    as vossas almas; aos nove do mês à tarde, de uma tarde a outra tarde, celebrareis o vosso sábado.</p>
+
+   
+    <h3>5.<i> Que dia guardarão os filhos de Deus no Céu e na Nova Terra?
+            <span id="citacao5" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao5', 'resposta5')"><u>Isaías 66:23.</u></span></i></h3>
+    <p id="resposta5" class="resposta"><b><i>Resposta Isaías [66:23]:</i></b> E será que desde uma lua nova até à outra, e desde um sábado até ao outro, virá toda a carne a adorar perante mim, diz o Senhor.</p>
+
+    <h3>6.<i> Que sinal de Deus separa a Sua igreja das igrejas falsas?
+            <span id="citacao6" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao6', 'resposta6')"><u>Ezequiel 20:20.</u></span></i></h3>
+    <p id="resposta6" class="resposta"><b><i>Resposta Ezequiel [20:20]:</i></b> E santificai os meus sábados, e servirão de
+        sinal entre mim e vós, para que saibais que eu sou o Senhor vosso Deus.</p>
+
+    <h3>7<i> Que benção prometeu o Senhor aos que se desviam de profanar o Sábado?
+            <span id="citacao7" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarResposta('citacao7', 'resposta7')"><u>Isaías 58:13-14.</u></u></span></i></h3>    
+    <p id="resposta7" class="resposta"><b><i>Resposta: Isaías [58:13]:</i></b> Se desviares o teu pé do sábado, de fazeres a tua
+        vontade no meu santo dia, e chamares ao sábado deleitoso, e o santo dia do Senhor, digno de honra, e o honrares
+        não seguindo os teus caminhos, nem pretendendo fazer a tua própria vontade, nem falares as tuas próprias
+        palavras,
+        <b><i>[58:14]</i></b> Então te deleitarás no Senhor, e te farei cavalgar sobre as alturas da terra, e te sustentarei com
+        a herança de teu pai Jacó; porque a boca do Senhor o disse.
+    </p>
+
+    <h3><i><span id="decisao" style="color: rgb(5, 98, 238); cursor:pointer;" onclick="mostrarRespostaDecisao()"><u>A Minha Decisão</u></span></i></h3>
+    <p id="respostaDecisao" class="resposta" style="margin-top: -14px;"><i>Decido ser fiel a Deus observando o santo dia do Senhor como um sinal de fidelidade entre Ele e eu.</i></p>
+          <!-- Container para a checkbox de conclusão -->
+   <div class="radio-container" style="color: mediumblue; font-family: 'Poppins', sans-serif;">
+    <input type="radio" id="concluida" name="lição09" class="radio-button" onclick="marcarConcluida('lição09')" <?php
+        if(localStorage.getItem("lição1Concluida")==="true" ) { echo "checked" ; } ?<BR>
+    <label for="concluida" class="radio-label">Marcar lição 09 como concluída</label>
+</div>
+
+<p id="lição09"></p>
+
+<!-- Botão para reiniciar os estudos -->
+<div class="reiniciar-button-container">
+    <button class="reiniciar-button" onclick="reiniciarEstudos()">Reiniciar o Estudo</button>
+</div>
+
+
+<center>
+<img class="no-border" src="src\images\LOOP.png" alt="" width="310px"><br><br></center>
+
+<script>
+
+    // Função para mostrar ou esconder a resposta da decisão
+function mostrarRespostaDecisao() {
+    const resposta = document.getElementById("respostaDecisao");
+    if (resposta.style.display === 'none') {
+        resposta.style.display = 'block';
+    } else {
+        resposta.style.display = 'none';
+    }
+}
+
+    
+    // Função para mostrar a resposta e sublinhar o capítulo e versículo clicado
+    function mostrarResposta(citacaoId, respostaId) {
+        var citacao = document.getElementById(citacaoId);
+        var resposta = document.getElementById(respostaId);
+
+        // Exibe ou oculta a resposta ao clicar
+        if (resposta.style.display === "none") {
+            resposta.style.display = "block";
+            citacao.classList.add("citacao-clicada"); // Adiciona a classe de sublinhado
+        } else {
+            resposta.style.display = "none";
+            citacao.classList.remove("citacao-clicada"); // Remove o sublinhado
+        }
+    }
+    // Função para marcar lição como concluída e salvar no localStorage
+    function marcarConcluida(id) {
+        const lição = document.getElementById(id);
+        lição.textContent = "Lição 09 Finalizada!";
+        lição.classList.add("concluida");
+
+        // Salva a informação no localStorage para manter após recarregar a página
+        localStorage.setItem("lição09Concluida", "true");
+    }
+
+    // Função para reiniciar os estudos e remover o localStorage
+    function reiniciarEstudos() {
+        // Reseta o estado do localStorage
+        localStorage.removeItem("lição09Concluida");
+
+        // Reseta o texto e a aparência da lição
+        document.getElementById("lição09").textContent = "";
+        document.getElementById("lição09").classList.remove("concluida");
+
+        // Desmarca o radio button
+        document.getElementById("concluida").checked = false;
+    }
+
+    // Verifica se a lição foi concluída e mantém o estado do radio button
+    window.onload = function() {
+        if (localStorage.getItem("lição09Concluida") === "true") {
+            document.getElementById("concluida").checked = true;
+            document.getElementById("lição09").textContent = " Parabéns! Lição 09 Finalizada!";
+            document.getElementById("lição09").classList.add("concluida");
+        }
+    }
+
+   
+</script>
+   
+
+
+    <a href="index.html">
+        <center>Voltar para a tela inicial</center>
+    </a>
+    <a href="https://aamar.adventistas.org/" target="_blank">
+        <center> Associação Amazonas Roraima - AAmaR</center><br><br>
+    </a>
+
+    <footer id="rodape">
+        Igreja Adventista do Sétimo Dia<br> Copyright  &copy;  2025 - Todos os Direitos Reservados.
+</footer><br>
+
+</body>
+
+</html>

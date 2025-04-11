@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estudo Bíblico">
+    <meta name="keyswords" content="estudo biblico,verdade e vida,estudo da bíblia, série de estudos">
+    <meta name="author" content="Franklin da Silva Rocha">
+    <title>Estudo Bíblico Verdade e Vida</title>
+</head>
+
+<style>
+    h1 {
+        background-color: #01264b;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: aliceblue;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: #01264b;
+        background-color: #47b8fa;
+        margin-top: -10px;
+        font-size: 18px;
+    }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+        color: #cf0844;
+        text-align: justify;
+        margin-top: -8px;
+    }
+
+    h3 {
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+        color: #01264b;
+    }
+
+    a {
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
+        text-align: justify;
+    }
+
+    b {
+        color: #01264b;
+    }
+
+    body {
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size:cover; 
+        background-position: center;        
+        max-width: 900px;  
+        position: absolute;
+        margin-left:50%;
+        transform: translateX(-50%);
+        text-align:justify;
+        justify-content: center;       
+    }
+
+
+    /* Estilo para a resposta (em vermelho) */
+    .resposta {
+        display: none; /* Inicialmente a resposta está oculta */
+        color: crimson; /* A cor da resposta é vermelha */
+        margin-top: 10px;
+        transition: all 0.5s ease-in-out; /* Animação para transição */
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+    }
+
+    /* Adiciona um destaque visual para os versículos */
+    .versiculo {
+        text-decoration: underline;
+        cursor: pointer;
+        color: rgb(5, 98, 238);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Estilo para a palavra "A minha Decisão" */
+    #decisao {
+        cursor: pointer;
+        color: rgb(5, 98, 238);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .concluida {
+            color: green;
+            font-weight: bold;
+            text-align: center;
+            margin: 7px;
+        }
+
+        .radio-container {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .radio-label {
+            margin-left: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .radio-button {
+            cursor: pointer;
+        }
+
+        .reiniciar-button {
+            display: block;
+            margin: 20px auto;
+            background-color: #01264b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .reiniciar-button:hover {
+            background-color: #47b8fa;
+            color: #003366;
+        }
+
+        .reiniciar-button-container {
+            text-align: center;
+        }
+
+        img{
+            border-radius: 20px;
+            border: 3px solid;            
+            color:#47b8fa;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+
+        .no-border {
+    border: none;
+    box-shadow:none;
+}
+
+#rodape {
+    color: #01264b;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;    
+}
+
+
+
+</style>
+
+<body>
+
+    <h1>Curso Bíblico Verdade & Vida</h1>
+    <h2>• <i>O Batismo Bíblico •</i></h2>
+    <p><i><center style="color: #003366; font-family: Caveat, cursive; font-size: 22px;">Conheça o plano de Deus para você.</center></i></p>
+    <hr><br>
+    <p><b style="color:crimson;">• Lição 18 - O Batismo Bíblico.</b></p>
+
+
+    <center>
+    <img src="src\images\batismo.jpeg" alt=""  width="310px"><br><br></center>
+    <p style="color: mediumblue;"><i> &emsp;&emsp;O batismo é o testemunho público de que aceitamos a Jesus como nosso Senhor e salvador pessoal. Através do batismo nos unimos a família de Deus e nos tornamos filhos amados do Pai.<br>&emsp;&emsp;A Bíblia revela a importância do batismo na vida do cristão que toma a decisão de seguir a Jesus e obedecer a Sua vontade.</i></p>
+
+
+    
+    <h3>1.<i> Antes de subir ao Céu, que ordem deu Jesus a Seus discípulos? <span class="versiculo" onclick="toggleResposta('resposta1')">Marcos 16:15</span></i></h3>
+    <div class="resposta" id="resposta1"><b><i>Resposta: Marcos [16:15]:</i></b> E disse-lhes: "Vão pelo mundo todo e preguem o evangelho a todas as pessoas.</div>
+    
+    <h3>2.<i> Qual é o primeiro passo no preparo para receber o batismo? <span class="versiculo" onclick="toggleResposta('resposta2')">Mateus 28:19-20</span></i></h3>
+    <div class="resposta" id="resposta2"><p><b><i>Resposta: Mateus [28:19-20]:</i></b> Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai e do Filho e do Espírito Santo, <b><i>[28:20]</i></b> ensinando-os a obedecer a tudo o que eu ordenei a vocês. E eu estarei sempre com vocês, até o fim dos tempos.</p> <p>O primeiro passo é fazer discípulos e batizá-los em nome do Pai, do Filho e do Espírito Santo.</p></div>
+    
+    <h3>3.<i> Qual é o segundo passo antes do batismo? <span class="versiculo" onclick="toggleResposta('resposta3')">Marcos 16:16</span></i></h3>
+    <div class="resposta" id="resposta3"><p><b><i>Resposta: Marcos [16:16]:</i></b> "Quem crer e for batizado será salvo, mas quem não crer será condenado."</p></div>
+    
+    <h3>4.<i> Qual é o terceiro passo? <span class="versiculo" onclick="toggleResposta('resposta4')">Atos 2:38</span></i></h3>
+    <div class="resposta" id="resposta4"><b><i>Resposta: Atos [2:38]:</i></b> Pedro respondeu: "Arrependam-se, e cada um de vocês seja batizado em nome de Jesus Cristo para perdão dos seus pecados, e receberão o dom do Espírito Santo." <p>O terceiro passo é o arrependimento e o batismo em nome de Jesus Cristo para perdão dos pecados.</p></div>
+    
+    <h3>5.<i> Depois do arrependimento, qual é o próximo passo? <span class="versiculo" onclick="toggleResposta('resposta5_1')">Mateus 3:6</span> <span class="versiculo" onclick="toggleResposta('resposta5_2')">Provérbios 28:13</span></i></h3>
+    
+    <!-- Respostas separadas para cada versículo -->
+    <div class="resposta" id="resposta5_1"><p><b><i>Resposta: Mateus [3:6]:</i></b> Confessando os seus pecados, eram batizados por ele no rio Jordão.</p></div>
+    <div class="resposta" id="resposta5_2"><p><b><i>Resposta: Provérbios [28:13]:</i></b> Quem esconde os seus pecados não prospera, mas quem os confessa e os abandona encontra misericórdia.</p></div>
+    
+    <h3>6.<i> Qual é a única e verdadeira forma de batismo? <span class="versiculo" onclick="toggleResposta('resposta6')">Romanos 6:3-5</span></i></h3>
+    <div class="resposta" id="resposta6"><b><i>Resposta: Romanos[6:3-5]:</i></b> <b><i>6:3</i></b> Não sabem que todos nós que fomos batizados em Cristo Jesus fomos batizados na sua morte? <b><i>[6:4]</i></b> Fomos portanto sepultados com ele na morte pelo batismo, a fim de que, assim como Cristo foi ressuscitado dos mortos pela glória do Pai, também nós andemos em novidade de vida. <b><i>[6:5]</i></b> Se dessa forma fomos unidos a ele na semelhança da sua morte, certamente o seremos também na semelhança da sua ressurreição.</div>
+    
+    <h3>7.<i> Como Deus considera a pessoa depois de batizada? <span class="versiculo" onclick="toggleResposta('resposta7')">II Coríntios 5:17</span></i></h3>
+    <div class="resposta" id="resposta7"><b><i>Resposta: II Coríntios [5:17]:</i></b> Portanto, se alguém está em Cristo, é nova criação. As coisas antigas já passaram; eis que surgiram coisas novas!</div><br>
+    
+  
+    <!-- Palavra "A minha Decisão" com o evento de clique -->
+    <p id="decisao"><u><i><strong>A minha Decisão</strong></i></u></p>
+    
+    <!-- A resposta que será mostrada ao clicar -->
+    <div id="resposta" class="resposta">
+        <p style="margin-top: -14px;"><i>Agradeço a Deus pela oportunidade da salvação em Jesus Cristo. Decido unir-me ao povo de Deus através do batismo e ser uma nova criatura em Seu Filho.</i></p>
+    </div>
+
+
+    <div class="radio-container" style="color: mediumblue; font-family: 'Poppins', sans-serif;">
+        <input type="radio" id="concluida" name="lição18" class="radio-button" onclick="marcarConcluida('lição18')">
+        <label for="concluida" class="radio-label">Marcar lição 18 como concluída</label>
+    </div>
+
+    <p id="lição18"></p>
+
+    <div class="reiniciar-button-container">
+        <button class="reiniciar-button" onclick="reiniciarEstudos()">Reiniciar o Estudo</button>
+    </div>
+
+    <center>
+    <img class="no-border" src="src\images\LOOP.png" alt="" width="310px"><br><br></center>
+
+
+    
+    <script>
+
+
+          // Função para mostrar ou esconder a resposta
+          function mostrarResposta(id) {
+            const resposta = document.getElementById(id);
+            resposta.style.display = resposta.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Função para marcar lição como concluída e salvar no localStorage
+        function marcarConcluida(id) {
+            const lição = document.getElementById(id);
+            lição.textContent = "Lição 18 Finalizada!";
+            lição.classList.add("concluida");
+
+            localStorage.setItem("lição18Concluida", "true");
+        }
+
+        // Função para reiniciar os estudos
+        function reiniciarEstudos() {
+            localStorage.removeItem("lição18Concluida");
+            document.getElementById("lição18").textContent = "";
+            document.getElementById("lição18").classList.remove("concluida");
+            document.getElementById("concluida").checked = false;
+        }
+
+        // Verificar o estado da lição ao carregar
+        window.onload = function() {
+            if (localStorage.getItem("lição18Concluida") === "true") {
+                document.getElementById("concluida").checked = true;
+                document.getElementById("lição18").textContent = "Parabéns! Lição 18 Finalizada!";
+                document.getElementById("lição18").classList.add("concluida");
+            }
+        }
+
+
+        // Função para alternar a visibilidade da resposta com animação
+        function toggleResposta(id) {
+            var respostaElement = document.getElementById(id);
+            if (respostaElement.style.display === "none" || respostaElement.style.display === "") {
+                respostaElement.style.display = "block"; // Exibe a resposta
+            } else {
+                respostaElement.style.display = "none"; // Oculta a resposta
+            }
+        }
+
+        // Função para alternar a visibilidade da resposta de "A minha Decisão"
+        document.getElementById("decisao").onclick = function() {
+            var resposta = document.getElementById("resposta");
+            if (resposta.style.display === "none") {
+                resposta.style.display = "block";  // Exibe a resposta
+            } else {
+                resposta.style.display = "none";  // Esconde a resposta
+            }
+        }
+    </script>
+
+    <a href="index.html">
+        <center>Voltar para a tela inicial</center>
+    </a>
+    <a href="https://aamar.adventistas.org/" target="_blank">
+        <center> Associação Amazonas Roraima - AAmaR</center><br><br>
+    </a>
+
+    <footer id="rodape">
+        Igreja Adventista do Sétimo Dia<br> Copyright  &copy;  2025 - Todos os Direitos Reservados.
+</footer><br>
+
+</body>
+
+</html>

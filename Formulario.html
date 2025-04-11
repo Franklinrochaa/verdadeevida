@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <style>
+        /* Resetando estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Estilo geral do body */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #01264b;
+            padding: 20px;
+        }
+
+        /* Estilo do container principal (seção) */
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 10px 45px;
+            background: #01264b;
+            width: 450px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+
+        /* Estilo do título */
+        section h2 {
+            color: #47b8fa;
+            font-size: 1.5rem;
+            margin: 2rem;
+        }
+
+        /* Estilo da imagem */
+        section img {
+            color: #f5f5f5;
+        }
+
+        /* Estilo do formulário */
+        section form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        /* Estilo dos labels dos campos do formulário */
+        form label {
+            color: #47b8fa;
+            font-size: 17px;
+            margin-bottom: 4px;
+        }
+
+        /* Estilo dos campos de input */
+        form input,
+        form textarea {
+            padding: 15px;
+            outline: none;
+            border: 0;
+            font-size: 15px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo específico para o textarea */
+        form textarea {
+            margin-bottom: 30px;
+        }
+
+        /* Estilo do botão de envio */
+        form button {
+            padding: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            background: transparent;
+            border: 2px solid #47b8fa;
+            color: #f5f5f5;
+            margin-bottom: 20px;
+            border-radius: 16px;
+        }
+
+        /* Estilo do botão de envio ao passar o mouse */
+        form button:hover {
+            background: #47b8fa;
+            color: #01264b;
+        }
+
+        /* Estilo da política de privacidade */
+        .privacy-policy {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #f5f5f5;
+            text-align: center;
+        }
+
+        .privacy-policy a {
+            color: #47b8fa;
+            text-decoration: none;
+        }
+
+        a {
+            color: #47b8fa;
+            text-align: center;
+            font-size: 15px;
+        }
+    </style>
+
+    <section>
+        <section>
+            <img src="src/images/logo_igreja.png" alt="Logotipo" class="logo" width="170px">
+            <h2>Fale Conosco</h2>
+
+            <form id="contactForm" action="https://formsubmit.co/ebnt.aamar@gmail.com" method="POST" onsubmit="confirmarEnvio(event)">
+                <input type="hidden" name="_template" value="table">
+
+                <label>Nome:</label>
+                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+
+                <label>E-mail:</label>
+                <input type="email" name="email" placeholder="Digite seu E-mail" autocomplete="off" required>
+
+                <label>Endereço:</label>
+                <input type="text" name="address" id="address" placeholder="Digite seu endereço" autocomplete="off" required>
+
+                <label>Telefone:</label>
+                <input type="tel" name="phone" placeholder="Digite seu telefone" autocomplete="off" required 
+                       inputmode="numeric" oninput="formatarTelefone(event)">
+
+                <label>Mensagem:</label>
+                <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+                <a href="index.html" class="btn">Página Principal</a>
+
+                <input type="text" name="honeypot" style="display:none">
+                <input type="hidden" name="accessKey" value="">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/agradecimento.html">
+            </form>
+
+            <div class="privacy-policy">
+                <label>
+                    <input type="checkbox" id="privacyConsent" name="privacyConsent" required>
+                    Eu aceito os <a href="https://www.adventistas.org/pt/privacidade/" target="_blank">termos de
+                        privacidade</a> e concordo com a coleta de meus dados para o fim exclusivo de contato e
+                    comunicação.
+                </label>
+            </div>
+
+        </section>
+
+        <script>
+            // Função para formatar o telefone com parênteses e traço
+            function formatarTelefone(event) {
+                let telefone = event.target.value.replace(/\D/g, ''); // Remove qualquer caractere não numérico
+
+                // Adiciona a máscara conforme a quantidade de números
+                if (telefone.length <= 2) {
+                    telefone = telefone.replace(/(\d{2})/, "($1)"); // Adiciona os parênteses
+                } else if (telefone.length <= 7) {
+                    telefone = telefone.replace(/(\d{2})(\d{5})/, "($1) $2"); // Adiciona o espaço
+                } else {
+                    telefone = telefone.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3"); // Adiciona o traço
+                }
+
+                event.target.value = telefone; // Atualiza o valor do campo
+            }
+
+            // Função para validar antes do envio
+            function confirmarEnvio(event) {
+                event.preventDefault();
+                const form = event.target;
+                const fields = form.querySelectorAll('[required]');
+                let isFormValid = true;
+
+                fields.forEach((field) => {
+                    if (!field.value.trim()) {
+                        isFormValid = false;
+                    }
+                });
+
+                const privacyConsent = document.getElementById('privacyConsent');
+                if (!privacyConsent.checked) {
+                    isFormValid = false;
+                }
+
+                const email = form.querySelector('input[name="email"]');
+                const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                if (!emailRegex.test(email.value)) {
+                    isFormValid = false;
+                }
+
+                // Se tudo estiver ok, envia o formulário
+                if (isFormValid) {
+                    form.submit();
+                } else {
+                    alert('Por favor, preencha todos os campos obrigatórios e aceite os termos de privacidade.');
+                }
+            }
+        </script>
+    </section>
+</body>
+
+</html>

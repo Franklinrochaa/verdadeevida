@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estudo Bíblico">
+    <meta name="keywords" content="estudo biblico, verdade e vida, estudo da bíblia, série de estudos">
+    <meta name="author" content="Franklin da Silva Rocha">
+    <title>Estudo Bíblico Verdade e Vida</title>
+    <style>
+        h1 {
+            background-color: #01264b;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            color: aliceblue;
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: #01264b;
+            background-color: #47b8fa;
+            margin-top: -10px;
+            font-size: 18px;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            color: #cf0844;
+            text-align: justify;
+            margin-top: -8px;
+        }
+
+        h3 {
+            font-size: 13px;
+            font-family: Poppins;
+            color: #01264b;
+            text-align: left;
+        }
+
+        a {
+            font-size: 13px;
+            font-family: 'Poppins', sans-serif;
+            text-align: justify;
+        }
+
+        b {
+            color: #01264b;
+        }
+
+        body {
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            max-width: 900px;
+            position: absolute;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            text-align: justify;
+            justify-content: center;
+        }
+
+        .resposta {
+            display: none;
+            margin-top: 5px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .mostrar-resposta {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .citacao-clicada {
+            text-decoration: underline;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .concluida {
+            color: green;
+            font-weight: bold;
+            text-align: center;
+            margin: 7px;
+        }
+
+        .radio-container {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .radio-label {
+            margin-left: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .radio-button {
+            cursor: pointer;
+        }
+
+        .reiniciar-button {
+            display: block;
+            margin: 20px auto;
+            background-color: #01264b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .reiniciar-button:hover {
+            background-color: #47b8fa;
+            color: #003366;
+        }
+
+        .reiniciar-button-container {
+            text-align: center;
+        }
+
+        img {
+            border-radius: 20px;
+            border: 3px solid;
+            color: #47b8fa;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+
+
+        .no-border {
+            border: none;
+            box-shadow: none;
+        }
+
+        #rodape {
+            color: #01264b;
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            font-size: 11px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Curso Bíblico Verdade & Vida</h1>
+    <h2>• <i>O Santuário •</i></h2>
+    <p><i>
+            <center style="color: #003366; font-family: Caveat, cursive; font-size: 22px;">Conheça o plano de Deus para
+                você.</center>
+        </i></p>
+    <hr><br>
+    <p><b style="color:crimson;">• Lição 16 - O Santuário.</b></p>
+    <center>
+        <img src="src\images\sant.png" alt="" width="310px"><br><br>
+    </center>
+    <p style="color: mediumblue;"><i>&emsp;&emsp;Na revelação das verdades Bíblicas encontramos muitas lições
+            significativas no santuário terrestre que Deus mandou Moisés construir. Através do ritual do santuário
+            compreendemos todo o plano da salvação simbolizados nos sacrifícios que aconteciam
+            ali.<br>&emsp;&emsp;Também podemos compreender qual a função de Cristo no plano da redenção e a Sua atuação
+            como sumo sacerdote no santuário do Céu.</i></p>
+
+    <h3>1. <i>Que pedido especial Deus fez a Moisés?
+            <span id="citacao1" style="color: rgb(5, 98, 238); cursor:pointer;"
+                onclick="mostrarResposta('citacao1', 'resposta1')"><u>Êxodo 25:8.</u></span></i></h3>
+    <p id="resposta1" class="resposta" style="display:none;">
+        <b><i>Resposta Êxodo [25:8]:</i></b> E farão um santuário para mim, e eu habitarei no meio deles.
+    </p>
+
+    <h3 style="letter-spacing: normal;">2. <i> O santuário possuía quantos compartimentos além do pátio?
+            <span id="citacao2" style="color: rgb(5, 98, 238); cursor:pointer; letter-spacing: normal;"
+                onclick="mostrarResposta('citacao2', 'resposta2')"><u>Êxodo 26:33.</u></span></i></h3>
+    <p id="resposta2" class="resposta" style="display:none; letter-spacing: normal;">
+        <b><i>Resposta Êxodo [26:33]:</i></b> Pendure o véu pelos colchetes e coloque atrás do véu a arca da aliança. O
+        véu separará o Lugar Santo do Lugar Santíssimo.
+    </p>
+
+    <h3>3. <i>Quem entrava nestes compartimentos?
+            <span id="citacao3" style="color: rgb(5, 98, 238); cursor:pointer;"
+                onclick="mostrarResposta('citacao3', 'resposta3')"><u>Hebreus 9:6-7.</u></span></i></h3>
+    <p id="resposta3" class="resposta" style="display:none;">
+        <b><i>Resposta Hebreus [9:6-7]:</i></b> <b><i>[9:6]</i></b> Estando tudo assim preparado, os sacerdotes entravam
+        regularmente no Lugar Santo do tabernáculo, para exercer o seu ministério.
+        <b><i>[9:7]</i></b> No entanto, somente o sumo sacerdote entrava no Santo dos Santos, apenas uma vez por ano, e
+        nunca sem apresentar o sangue do sacrifício, que ele oferecia por si mesmo e pelos pecados que o povo havia
+        cometido por ignorância.
+    </p>
+
+    <h3>4. <i>Três serviços eram realizados no santuário:
+            <span id="citacao4" style="color: rgb(5, 98, 238); cursor:pointer;"
+                onclick="mostrarResposta('citacao4', 'resposta4')"><u>Números 28:4.</u></span>
+            <span id="citacao5" style="color: rgb(5, 98, 238); cursor:pointer;"
+                onclick="mostrarResposta('citacao5', 'resposta5')"><u>Levítico 4:27-29.</u></span>
+            <span id="citacao6" style="color: rgb(5, 98, 238); cursor:pointer;"
+                onclick="mostrarResposta('citacao6', 'resposta6')"><u>Levítico 23:27.</u></span>
+        </i></h3>
+    <p id="resposta4" class="resposta" style="display:none;">
+        <b><i>Resposta Números [28:4]</i>: (Diário).</b> Um cordeiro sacrificarás pela manhã, e o outro cordeiro
+        sacrificarás à tarde.
+    </p>
+
+    <p id="resposta5" class="resposta" style="display:none;">
+        <b><i>Resposta Levítico [4:27-29]:</i> (Pelo pecador).</b> <b><i>[4:27]</i></b> E, se qualquer pessoa do povo da
+        terra pecar por ignorância, fazendo contra algum dos mandamentos do Senhor, aquilo que não se deve fazer, e
+        assim for culpada;
+        <b><i>[4:28]</i></b> Ou se o pecado que cometeu lhe for notificado, então trará pela sua oferta uma cabra, uma
+        fêmea sem defeito, pelo seu pecado que cometeu.
+        <b><i>[4:29]</i></b> Ou se o pecado que cometeu lhe for notificado, então trará pela sua oferta uma cabra, uma
+        fêmea sem defeito, pelo seu pecado que cometeu.
+    </p>
+
+    <p id="resposta6" class="resposta" style="display:none;">
+        <b><i>Resposta Levítico [23:27]:</i> (Anual).</b> O décimo dia deste sétimo mês é o Dia da Expiação. Façam uma
+        reunião sagrada e humilhem-se, e apresentem ao Senhor uma oferta preparada no fogo.
+    </p>
+
+    <h3>5. <i>Quando o santuário da Terra perdeu a vigência?
+            <span id="citacao7" style="color: rgb(5, 98, 238); cursor:pointer;"
+                onclick="mostrarResposta('citacao7', 'resposta7')"><u>Mateus 27:50-51</u></span></i></h3>
+    <p id="resposta7" class="resposta" style="display:none;">
+        <b><i>Resposta: Mateus [27:50-51]:</i></b> E Jesus, clamando outra vez com grande voz, rendeu o espírito.
+        <b><i>[27:51]</i></b> E eis que o véu do templo se rasgou em dois, de alto a baixo; e tremeu a terra, e
+        fenderam-se as pedras.
+    </p>
+
+    <h3>6. <i>Em lugar do Santuário da Terra, que Santuário está em função atualmente?
+            <span id="citacao8" style="color: rgb(5, 98, 238); cursor:pointer;"
+                onclick="mostrarResposta('citacao8', 'resposta8')"><u>Hebreus 8:1-2</u></span></i></h3>
+    <p id="resposta8" class="resposta" style="display:none;">
+        <b><i>Resposta Hebreus [8:1-2]:</i></b> <b><i>[8:1]</i></b> Ora, a suma do que temos dito é que temos um sumo
+        sacerdote tal, que está assentado nos céus à destra do trono da majestade,
+        <b><i>[8:2]</i></b> Ministro do santuário, e do verdadeiro tabernáculo, o qual o Senhor fundou, e não o homem.
+    </p>
+
+    <h3>7. <i>Que convite especial é feito para nós hoje?
+            <span id="citacao9" style="color: rgb(5, 98, 238); cursor:pointer;"
+                onclick="mostrarResposta('citacao9', 'resposta9')"><u>Hebreus 4:16</u></span></i></h3>
+    <p id="resposta9" class="resposta" style="display:none;">
+        <b><i>Resposta: Hebreus [4:16]:</i></b> Cheguemos, pois, com confiança ao trono da graça, para que possamos
+        alcançar misericórdia e achar graça, a fim de sermos ajudados em tempo oportuno.
+    </p>
+
+    <h3><i><span id="citacao10" style="color: rgb(5, 98, 238); cursor:pointer;"
+                onclick="mostrarResposta('citacao10', 'resposta10')"><u>A Minha Decisão</u></span></i></h3>
+    <p id="resposta10" class="resposta" style="margin-top: -14px;">
+        <i>Aceito a Cristo como o meu Sumo Sacerdote no Céu. Agradeço o seu perdão e salvação. Quero, pela Graça de
+            Deus, estar com Ele na eternidade.</i>
+    </p>
+
+    <div class="radio-container" style="color: mediumblue; font-family: 'Poppins', sans-serif;">
+        <input type="radio" id="concluida" name="lição16" class="radio-button" onclick="marcarConcluida('lição16')">
+        <label for="concluida" class="radio-label">Marcar lição 16 como concluída</label>
+    </div>
+
+    <p id="lição16"></p>
+
+    <div class="reiniciar-button-container">
+        <button class="reiniciar-button" onclick="reiniciarEstudos()">Reiniciar o Estudo</button>
+    </div>
+
+
+    <center>
+        <img class="no-border" src="src\images\LOOP.png" alt="" width="310px"><br><br>
+    </center>
+
+    <script>
+        function mostrarResposta(id) {
+            const resposta = document.getElementById(id);
+            resposta.style.display = resposta.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function marcarConcluida(id) {
+            const lição = document.getElementById(id);
+            lição.textContent = "Lição 16 Finalizada!";
+            lição.classList.add("concluida");
+            localStorage.setItem("lição16Concluida", "true");
+        }
+
+        function reiniciarEstudos() {
+            localStorage.removeItem("lição16Concluida");
+            document.getElementById("lição16").textContent = "";
+            document.getElementById("lição16").classList.remove("concluida");
+            document.getElementById("concluida").checked = false;
+        }
+
+        window.onload = function () {
+            if (localStorage.getItem("lição16Concluida") === "true") {
+                document.getElementById("concluida").checked = true;
+                document.getElementById("lição16").textContent = "Parabéns! Lição 16 Finalizada!";
+                document.getElementById("lição16").classList.add("concluida");
+            }
+        }
+
+        function mostrarResposta(citacaoId, respostaId) {
+            var resposta = document.getElementById(respostaId);
+            if (resposta.style.display === "none") {
+                resposta.style.display = "block";
+            } else {
+                resposta.style.display = "none";
+            }
+        }
+    </script>
+
+    <a href="index.html">
+        <center>Voltar para a tela inicial</center>
+    </a>
+    <a href="https://aamar.adventistas.org/" target="_blank">
+        <center> Associação Amazonas Roraima - AAmaR</center><br><br>
+    </a>
+
+    <footer id="rodape">
+        Igreja Adventista do Sétimo Dia<br> Copyright &copy; 2025 - Todos os Direitos Reservados.
+    </footer><br>
+
+</body>
+
+</html>

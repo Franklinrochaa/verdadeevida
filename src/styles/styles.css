@@ -1,0 +1,278 @@
+/* IMPORTS DE FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+
+/* RESET GERAL DE MÁRGENA E PADDING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #def3fa;
+    background-image: url("/src/images/Jesus2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    font-family: "Poppins", sans-serif;
+}
+
+/* PAGINA */
+.pagina {
+    display: flex;
+    height: 100vh;
+    align-items: stretch;
+}
+
+/* TELA DE CARREGAMENTO */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 2s ease-out;
+}
+
+.logo {
+    width: 400px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* ANIMAÇÃO DO LOGOTIPO */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* TELA PRINCIPAL DO APLICATIVO */
+.app-screen {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.loading-screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* MAIN */
+main {
+    padding: 22px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding-left: calc(82px + 20px);
+}
+
+/* LAYOUT LATERAL */
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    height: 206vh;
+    border-radius: 0px 18px 18px 0px;
+    position: relative;
+    transition: all 0.5s;
+    min-width: 82px;
+    z-index: 2;
+}
+
+#sidebar_content {
+    padding: 12px;
+}
+
+/* CONTEÚDO DO USUÁRIO */
+#user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+#user_avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#user_infos {
+    display: flex;
+    flex-direction: column;
+}
+
+#user_infos span:last-child {
+    color: #01264b;
+    font-size: 12px;
+}
+
+/* ITENS DO MENU */
+#side_items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style-type: none;
+}
+
+.side-item {
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+    list-style-type: none;
+    
+    
+}
+
+/* ESTILO ATIVO E HOVER NOS ITENS DO MENU */
+.side-item.active {
+    background-color: #003973;
+    list-style: none;
+    
+}
+
+.side-item:hover:not(:active),
+#logout_btn:hover {
+    background-color: #47b8fa;
+}
+
+.side-item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.side-item:hover:not(:active) a {
+    color: rgb(00, 39, 73);
+    transition: 0.3s all;
+}
+
+/* ÍCONES NOS ITENS DO MENU */
+.side-item a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+/* LOGOUT */
+#logout {
+    border-top: 1px solid #f7f6e3;
+    padding: 12px;
+}
+
+#logout_btn {
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* BOTÃO DE ABERTURA DO MENU LATERAL */
+#open_btn {
+    position: absolute;
+    top: 30px;
+    right: -15px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border-radius: 100%;
+    width: 27px;
+    height: 27px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* OVERLAY */
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay.hidden {
+    display: none;
+}
+
+/* ANIMAÇÃO DO ÍCONE DE ABERTURA */
+#open_btn_icon {
+    transition: transform 0.3s ease;
+}
+
+.open-sidebar #open_btn_icon {
+    transform: rotate(180deg);
+}
+
+/* DESCRIÇÃO DOS ITENS DO MENU */
+.item-description {
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    transition: width 0.6s;
+}
+
+/* LAYOUT DO MENU LATERAL ABERTO */
+#sidebar.open-sidebar {
+    min-width: 15%;
+}
+
+#sidebar.open-sidebar .item-description {
+    width: 250px;
+    height: auto;
+}
+
+#sidebar.open-sidebar .side-item a {
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+/* MEDIA QUERIES PARA TELAS PEQUENAS */
+@media (max-width: 580px) {
+    #sidebar {
+        position: absolute;
+        top: 0;
+    }
+}
+
+

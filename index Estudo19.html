@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estudo Bíblico">
+    <meta name="keywords" content="estudo biblico, verdade e vida, estudo da bíblia, série de estudos">
+    <meta name="author" content="Franklin da Silva Rocha">
+    <title>Estudo Bíblico Verdade e Vida</title>
+    <style>
+        h1 {
+            background-color: #01264b;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            color: aliceblue;
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: #01264b;
+            background-color: #47b8fa;
+            margin-top: -10px;
+            font-size: 18px;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            color: crimson;
+            text-align: justify;
+            margin-top: -8px;
+        }
+
+        h3 {
+            font-size: 13px;
+            font-family: 'Poppins', sans-serif;
+            color: #01264b;
+            font-style: italic;
+        }
+
+        a {
+            font-size: 13px;
+            font-family: 'Poppins', sans-serif;
+            text-align: justify;
+        }
+
+        body {
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            max-width: 900px;
+            position: absolute;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            text-align: justify;
+            justify-content: center;
+        }
+
+        .resposta {
+            display: none;
+            color: crimson;
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            text-align: justify;
+            
+        }
+
+        
+
+        .versiculo {
+            color: rgb(5, 98, 238);
+            cursor: pointer;
+            font-style: italic;
+        }
+
+        .decisao {
+            color: rgb(5, 98, 238);
+            cursor: pointer;
+        }
+
+        #decisaoResposta {
+            display: none;
+        }
+
+        .concluida {
+            color: green;
+            font-weight: bold;
+            text-align: center;
+            margin: 7px;
+        }
+
+        .radio-container {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .radio-label {
+            margin-left: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .radio-button {
+            cursor: pointer;
+        }
+
+        .reiniciar-button {
+            display: block;
+            margin: 20px auto;
+            background-color: #01264b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .reiniciar-button:hover {
+            background-color: #47b8fa;
+            color: #003366;
+        }
+
+        .reiniciar-button-container {
+            text-align: center;
+        }
+
+        img {
+            border-radius: 20px;
+            border: 3px solid;
+            color: #47b8fa;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+
+        .no-border {
+    border: none;
+    box-shadow:none;
+}
+
+#rodape {
+    color: #01264b;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;    
+}
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Curso Bíblico Verdade & Vida</h1>
+    <h2>• <i>A Igreja Verdadeira •</i></h2>
+    <p><i><center style="color: #003366; font-family: Caveat, cursive; font-size: 22px;">Conheça o plano de Deus para você.</center></i></p>
+    <hr><br><p><b style="color:crimson;">• Lição 19 - A Igreja Verdadeira.</b></p>
+
+    <center>
+        <img src="src\images\igreja.jpeg" alt="" width="310px"><br><br>
+    </center>
+    <p style="color: mediumblue;"><i> &emsp;&emsp;Ser parte dessa igreja envolve viver uma vida de acordo com os princípios bíblicos, aguardando com esperança a segunda vinda de Cristo e promovendo a missão de levar o evangelho ao mundo.</i></p>
+
+    <!-- Pergunta e Versículo 1 -->
+    <h3>1.
+        <span class="pergunta">Quem é o fundamento da igreja ou sua Pedra Angular?</span>
+        <span class="versiculo-container">
+            <span class="versiculo" onclick="toggleHighlight(this, 'resposta1', 'Edificados sobre o fundamento dos apóstolos e dos profetas, de que Jesus Cristo é a principal pedra angular.', '<b><i style= color:black> Resposta Efésios [2:20]:</i></b>')"><i><u>Efésios 2:20</u></i></span>
+        </span>
+    </h3>
+    <div class="resposta" id="resposta1"><i>Resposta [Efésios 2:20]</i> Edificados sobre o fundamento dos apóstolos e dos profetas, de que Jesus Cristo é a principal pedra angular.</div>
+
+    <!-- Pergunta e Versículo 2 -->
+    <h3>2.
+        <span class="pergunta">Quem são os dirigentes da Igreja?</span>
+        <span class="versiculo-container">
+            <span class="versiculo" onclick="toggleHighlight(this, 'resposta2', 'E ele mesmo deu uns para apóstolos, e outros para profetas, e outros para evangelistas, e outros para pastores e doutores, Querendo o aperfeiçoamento dos santos, para a obra do ministério, para edificação do corpo de Cristo.', '<b><i style= color:black> Resposta Efésios [4:11-12]</i></b>')"><i><u>Efésios 4:11-12.</u></i></span>
+        </span>
+    </h3>
+    <div class="resposta" id="resposta2"><i>Resposta [Efésios 4:11-12]:</i> Portanto, vocês já não são estrangeiros nem forasteiros, mas concidadãos dos santos e membros da família de Deus, edificados sobre o fundamento dos apóstolos e dos profetas, tendo Jesus Cristo como pedra angular.</div>
+
+    <!-- Pergunta e Versículo 3 -->
+    <h3>3.
+        <span class="pergunta">Qual é a tríplice missão da igreja?</span>
+        <span class="versiculo-container">
+            <span class="versiculo" onclick="toggleHighlight(this, 'resposta3', 'Percorria Jesus toda a Galiléia, ensinando nas sinagogas, pregando o evangelho do reino e curando toda sorte de doenças e enfermidades entre o povo.', '<b><i style= color:black> Resposta Mateus [4:25]</i></b>')"><i><u>Mateus 4:25.</u></i></span>
+        </span>
+    </h3>
+    <div class="resposta" id="resposta3"><i>Resposta [Mateus 4:25]:</i> A segunda marca da igreja de Deus é a salvação somente através de Jesus Cristo.</div>
+
+    <!-- Pergunta e Versículo 4 -->
+    <h3>4.
+        <span class="pergunta">Que exemplo a Igreja deve seguir?</span>
+        <span class="versiculo-container">
+            <span class="versiculo" onclick="toggleHighlight(this, 'resposta4', 'Porque eu vos dei o exemplo, para que, como eu vos fiz, façais vós também.', '<b><i style= color:black> Resposta João [13:15]</i></b>')"><i><u>João 13:15.</u></i></span>
+        </span>
+    </h3>
+    <div class="resposta" id="resposta4"><i>Resposta [João 13:15]:</i> A terceira marca da igreja de Deus é a promessa da volta de Jesus para levar os seus para o céu.</div>
+
+    <!-- Pergunta e Versículo 5 -->
+    <h3>5.
+        <span class="pergunta">Qual é a norma de conduta da Igreja?</span>
+        <span class="versiculo-container">
+            <span class="versiculo" onclick="toggleHighlight(this, 'resposta5', 'Irou-se o dragão contra a mulher e foi pelejar com os restantes da sua descendência, os que guardam os mandamentos de Deus e têm o testemunho de Jesus; e se pôs em pé sobre a areia do mar.', '<b><i style= color:black> Resposta Apocalipse [12:17]</i></b>')"><i><u>Apocalipse 12:17.</u></i></span>
+        </span>
+    </h3>
+    <div class="resposta" id="resposta5"><i>Resposta [Apocalipse 12:17]:</i> Se me amais, guardai os meus mandamentos.</div>
+
+    <!-- Pergunta e Versículo 6 -->
+    <h3>6.
+        <span class="pergunta">Que dom possuirá a Igreja Remanescente?</span>
+        <span class="versiculo-container">
+            <span class="versiculo" onclick="toggleHighlight(this, 'resposta6', 'Pois o testemunho de Jesus é o espírito de profecia.', '<b><i style= color:black> Resposta Apocalipse [19:10]</i></b>')"><i><u>Apocalipse 19:10</u></i></span>
+        </span>
+    </h3>
+    <div class="resposta" id="resposta6"><i>Resposta [Apocalipse 19:10]:</i> A quinta marca da igreja de Deus é o testemunho de Jesus, que é o espírito de profecia.</div>
+
+    <!-- Pergunta e Versículo 7 -->
+    <h3>7.
+        <span class="pergunta">Que devo fazer?</span>
+        <span class="versiculo-container">
+            <span class="versiculo" onclick="toggleHighlight(this, 'resposta7', '1. Unir-se à Igreja verdadeira.', '<b><i style= color:black> Resposta Atos [2:41]</i></b>')"><i><u>Atos 2:41;</u></i></span>
+            <span class="versiculo" onclick="toggleHighlight(this, 'resposta7', '2. Permanecer fiel e firme.', '<b><i style= color:black> Resposta II Pedro [1:10-12]</i></b>')"><i><u>II Pedro 1:10-12;</u></i></span>
+        </span>
+    </h3>
+    <div class="resposta" id="resposta7"><i>Resposta [Isaías 58:13]:</i> <b>A sexta marca da igreja de Deus é a observância do sábado como sinal entre Deus e o Seu povo.</b></div>
+
+    <!-- Pergunta e Versículo 8 -->
+    <h3>8.
+        <span class="pergunta">Quais as características da Igreja Verdadeira?</span>
+        <span class="versiculo-container">
+            <span class="versiculo" onclick="toggleHighlight(this, 'resposta8_1', 'A Igreja verdadeira possui a fé em Jesus - (Apocalipse 14:12)', '<b><i style= color:black> Resposta Apocalipse [14:12]</i></b>')"><i><u>Apocalipse 14:12</u></i></span>
+            <span class="versiculo" onclick="toggleHighlight(this, 'resposta8_2', 'Guarda os mandamentos da lei de Deus - (Apocalipse 14:12)', '<b><i style= color:black> Resposta Apocalipse [14:12]</i></b>')"><i><u>Apocalipse 14:12</u></i></span>
+            <span class="versiculo" onclick="toggleHighlight(this, 'resposta8_3', 'Tem a manifestação visível do espírito de profecia - (Apocalipse 19:10)', '<b><i style= color:black> Resposta Apocalipse [19:10]</i></b>')"><i><u>Apocalipse 19:10</u></i></span>
+            <span class="versiculo" onclick="toggleHighlight(this, 'resposta8_4', 'Respeita o santo sábado do Senhor - (Êxodo 20:8-11)', '<i style= color:black> Resposta Êxodo [20:8-11]</i>')"><i><u>Êxodo 20:8-11</u></i></span>
+            <span class="versiculo" onclick="toggleHighlight(this, 'resposta8_5', 'Se orienta pelo que diz a Santa Palavra de Deus - (II Timóteo 3:16)', '<b><i style= color:black> Resposta II Timóteo [3:16]</i></b>')"><i><u>II Timóteo 3:16</u></i></span>
+            <span class="versiculo" onclick="toggleHighlight(this, 'resposta8_6', 'Sustenta um dinâmico e tríplice de evangelismo - (Mateus 4:23)', '<b><i style= color:black> Resposta Mateus [4:23]</i></b>')"><i><u>Mateus 4:23</u></i></span>
+            <span class="versiculo" onclick="toggleHighlight(this, 'resposta8_7', 'Anuncia o juízo iminente - (Apocalipse 14:7)', '<b><i style= color:black> Resposta Apocalipse [14:7]</i></b>')"><i><u>Apocalipse 14:7</u></i></span>
+            <span class="versiculo" onclick="toggleHighlight(this, 'resposta8_8', 'Prega com poder acerca da segunda vinda de Jesus - (Tito 2:13)', '<b><i style= color:black> Resposta Tito [2:13]</i></b>')"><i><u>Tito 2:13</u></i></span>
+        </span>
+    </h3>
+
+    <div class="resposta" id="resposta8_1">
+        <i>Resposta Apocalipse 14:12</i> - <b>A Igreja verdadeira possui a fé em Jesus.</b>
+    </div>
+
+    <div class="resposta" id="resposta8_2">
+        <i>Resposta Apocalipse 14:12</i> - <b>Guarda os mandamentos da lei de Deus.</b>
+    </div>
+
+    <div class="resposta" id="resposta8_3">
+        <i>Resposta Apocalipse 19:10</i> - <b>Tem a manifestação visível do espírito de profecia.</b>
+    </div>
+
+    <div class="resposta" id="resposta8_4">
+        <i>Resposta Êxodo 20:8-11</i> - <b>Respeita o santo sábado do Senhor.</b>
+    </div>
+
+    <div class="resposta" id="resposta8_5">
+        <i>Resposta II Timóteo 3:16</i> - <b>Se orienta pelo que diz a Santa Palavra de Deus.</b>
+    </div>
+
+    <div class="resposta" id="resposta8_6">
+        <i>Resposta Mateus 4:23</i> - <b>Sustenta um dinâmico e tríplice de evangelismo.</b>
+    </div>
+
+    <div class="resposta" id="resposta8_7">
+        <i>Resposta Apocalipse 14:7</i> - <b>Anuncia o juízo iminente.</b>
+    </div>
+
+    <div class="resposta" id="resposta8_8">
+        <i>Resposta Tito 2:13</i> - <b>Prega com poder acerca da segunda vinda de Jesus.</b>
+    </div>
+
+    <!-- "A Minha Decisão" -->
+    <h3>
+        <span class="decisao" onclick="toggleDecisao()"><u>A Minha Decisão</u></span>
+    </h3>
+    <div class="resposta" id="decisaoResposta" style="margin-top: -14px;"> <i>A Minha Decisão é seguir as marcas da verdadeira igreja de Deus e obedecer aos Seus mandamentos.</i></div>
+
+    <div class="radio-container" style="color: mediumblue; font-family: 'Poppins', sans-serif;">
+        <input type="radio" id="concluida" name="lição19" class="radio-button" onclick="marcarConcluida('lição19')">
+        <label for="concluida" class="radio-label">Marcar lição 19 como concluída</label>
+    </div>
+
+    <p id="lição19"></p>
+
+    <div class="reiniciar-button-container">
+        <button class="reiniciar-button" onclick="reiniciarEstudos()">Reiniciar o Estudo</button>
+    </div>
+
+    <center>
+    <img class="no-border" src="src\images\LOOP.png" alt="" width="310px"><br><br></center>
+
+
+    <script>
+        // Função para mostrar ou esconder a resposta
+        function mostrarResposta(id) {
+            const resposta = document.getElementById(id);
+            resposta.style.display = resposta.style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Função para marcar lição como concluída e salvar no localStorage
+        function marcarConcluida(id) {
+            const lição = document.getElementById(id);
+            lição.textContent = "Lição 19 Finalizada!";
+            lição.classList.add("concluida");
+
+            localStorage.setItem("lição19Concluida", "true");
+        }
+
+        // Função para reiniciar os estudos
+        function reiniciarEstudos() {
+            localStorage.removeItem("lição19Concluida");
+            document.getElementById("lição19").textContent = "";
+            document.getElementById("lição19").classList.remove("concluida");
+            document.getElementById("concluida").checked = false;
+        }
+
+        // Verificar o estado da lição ao carregar
+        window.onload = function() {
+            if (localStorage.getItem("lição19Concluida") === "true") {
+                document.getElementById("concluida").checked = true;
+                document.getElementById("lição19").textContent = "Parabéns! Lição 19 Finalizada!";
+                document.getElementById("lição19").classList.add("concluida");
+            }
+        }
+
+        // Função para alternar a visibilidade da resposta com animação
+        function toggleResposta(id) {
+            var respostaElement = document.getElementById(id);
+            if (respostaElement.style.display === "none" || respostaElement.style.display === "") {
+                respostaElement.style.display = "block";
+            } else {
+                respostaElement.style.display = "none";
+            }
+        }
+
+        // Função para alternar a visibilidade de "A Minha Decisão"
+        document.getElementById("decisao").onclick = function() {
+            var resposta = document.getElementById("resposta");
+            if (resposta.style.display === "none") {
+                resposta.style.display = "block";
+            } else {
+                resposta.style.display = "none";
+            }
+        }
+
+        // Função para alternar a cor do versículo e mostrar/ocultar a resposta associada
+        function toggleHighlight(element, respostaId, texto, versiculo) {
+            element.style.color = (element.style.color === "blue") ? "#0000ff" : "blue";
+            toggleResposta(respostaId);
+            var resposta = document.getElementById(respostaId);
+            resposta.innerHTML = "<i>" + versiculo + "</i> " + texto + "";
+        }
+
+        // Função para alternar a visibilidade de "A Minha Decisão"
+        function toggleDecisao() {
+            var textoDecisao = document.getElementById("decisaoResposta");
+            if (textoDecisao.style.display === "none") {
+                textoDecisao.style.display = "block";
+            } else {
+                textoDecisao.style.display = "none";
+            }
+        }
+    </script>
+
+    <a href="index.html"><center>Voltar para a tela inicial</center></a>
+    <a href="https://aamar.adventistas.org/" target="_blank"><center> Associação Amazonas Roraima - AAmaR</center></a><br><br>
+
+    <footer id="rodape">
+        Igreja Adventista do Sétimo Dia<br> Copyright  &copy;  2025 - Todos os Direitos Reservados.
+</footer><br>
+
+
+</body>
+
+</html>
