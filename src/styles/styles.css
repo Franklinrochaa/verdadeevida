@@ -18,7 +18,7 @@ body {
     display: flex;
     min-height: 100vh;
     background-color: #def3fa;
-    background-image: url("/src/images/Jesus2.jpg");
+    background-image: url("../images/Jesus2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
